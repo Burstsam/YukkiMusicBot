@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "16409691"))
+API_HASH = getenv("a60b42fe202a7ffbb97043df46901227")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("5269156943:AAEV4r6aYf9UiqRaAKvTttyVVmHPMBEiK4Y")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://devildb:devildb@cluster0.fvjsj.mongodb.net/Cluster0?retryWrites=true&w=majority", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-525000988"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("Saki")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5053846242").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/NotReallyShikhar/YukkiMusicBot",
+    "https://github.com/Burstsam/YukkiMusicBot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -65,10 +65,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
+    "https://t.me/SakiIzumoSupport", None
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", None
+    "https://t.me/Marin_Support", None
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
@@ -100,11 +100,11 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", None)
+GITHUB_REPO = getenv("https://github.com/", None)
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("a88cb7aea822444a8bceb913ad4eae06", None)
+SPOTIFY_CLIENT_SECRET = getenv("6f00a158193249bd95635cba118584c7", None)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
@@ -135,11 +135,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("BQAGRNEqivlH92qsCQS5MKoKztfe4eqVmfcw1UDDMfmryjoscBf0yxBpuvsSvAM8_Xh93YlXAvchbIAcY2w9k2FyfC-vzqoVLEaIk9RlFvpi7c2XWWxjm5iwCOI5pfPxik9csOYhc714yXoXZk5af6IoUz2feS2X9uAPUSgQiEYQDxcLD9UVSAnFr82W3aoOz7IXetJkDCGqgbgKi6OHPLxYwiw0E3gstCBYJz_gefMoYyah0UwMKudHVK22unGgUTFt_WjrCAsJiyPKjplDgHaH_mR74l02tLFL7W4SC0Bp4c4IufmgKEGBtZa5h03xKMFX5wRd0KGju8t94yxsefVxAAAAASu2KGcA", None)
+STRING2 = getenv("BQCYOUMrlpZwcFbf9nFxbo8PSR-18K4F0NEB_uNkhuQp2h1SP3ZqW8zbksNg5Q8M2pv5jOcHAmpGQhJqObf40HItHqEVRs7q9Gl-3cLfbv_JWd5gg8-2Uv5zYxbjxhAx1XTjwq0YlCh1D9b5Tqox_v6e41RCBO83ZSf3O0XY14H-sJMP1KhCX_pS_ioBD1gMQeTO0qScAuOfssN2k7x_a-y8sSn83eGS-OatUjdumX2uZ_cqoUgB89L1ZCKu2Jve9khVSS8oJM8iZqxgxfavzKOJ5Lz4HpZmAT_TzO9fsdpUNXk6JEetu4AYgDh6AK1-dwonN964IkgcGbD3vG6d7tipAAAAASx8kj0A", None)
+STRING3 = getenv("BQAFyxl1Y4TamA5qffc0y4KQaQPAkaqPiCa3D_HxsDKSeMR-5DnXEcmEgwoIHBJhinYRc9ubtXr2ko4rw1BoGoQ5zqx1cPJoPpOeyJ_9cqFvJARsV7ZY4by8WzJd-WmzoDbMAGMTkfUq-p7bvcSLKDT0vOqrEUOfajQQojeJLZfnDwpEAQQU4nQvnNzPNxcnBsrYL92QbI7DQIkKFIK8-UQA4D9FvAm3HO-C3csU_I19u63TsOz1w32yXrenj3rq04zBUctk4QFmwNl6jCfliisxkscdtPIzH38edvJTVAu5n1X9lKEKJ9Z_T7XT_-H9xD6wP08qP5pyMaR6BpMBluUBAAAAASvUBfoA", None)
+STRING4 = getenv("BQBEG1Q6NqD9-enBqRWtsNLTGMpDlZtvVl7siW9rWk2O8Rd9C4SC2LeUDh-JmHkxC9iX4I3J8Z4a0UHwrFIbRtqos-0Nf_aF5TO7rQ7HXzOn4xvDWqu42bVDdTH9nQA0Qucsb2T5CwuqaZvdex6VfkM1V0gXuVLtP02cJKNIYzeBGk9umxvYmOTyTfKKRqneCLfk7aSuAzJTEAc0p8TzPBhN3lbMhANjvNwHweI--aUWZF43vd-CNc7saxJcVRQs_eDJc5lMNjjrXSW0i8eXafakiNKZC12ppzfCyjB9X86fFGG2WTuKQQ_Ql8wwA39JpllevGIGqXlJxvHz-E5uykW1AAAAAS07kuIA", None)
+STRING5 = getenv("BQBvPN-oUIVRDCvIg5xcM51CKrcWeKFjMOvA6g8n-RT0bRxTnV_gQxRMUgmG3xfyDwi3PmyOCpL1mX6PIWfgrII_fPd-QiSQd1P8F5Ds_b610KzthVwybbE4M6krwy99hIFdfMMgOol78BAIHJrQ9ro5esT-tSeRjznqwxK2zQUyaQt1ESobzcWWe1yDQZc84x0ZEKQ-yV8vGlC95Oyb-v2ssnMvzaw2J4HKUjCl0ID5K_-dWUQnIdTsCZdQ6qoO-t7oL0kHzzB2EtrnFi07MvaHx6V8hQxnw5ofipT0FVezcPpZURVoUIA3QoRkzZEV19DY4k2sZuJeXIv5-Vob_cbnAAAAAS6j5ZAA", None)
 
 
 #  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
@@ -169,22 +169,22 @@ START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://telegra.ph/file/c58d4bc96cdaeddf9974e.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "https://telegra.ph/file/c58d4bc96cdaeddf9974e.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "assets/Global.jpeg",
+    "https://telegra.ph/file/c58d4bc96cdaeddf9974e.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+    "https://telegra.ph/file/c58d4bc96cdaeddf9974e.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
